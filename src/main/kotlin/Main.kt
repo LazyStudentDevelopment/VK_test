@@ -27,7 +27,7 @@ private fun sms() {
 
             bufferList.add(n, "")
 
-            while (inputArray.size != 0 && (bufferList[n].length + inputArray.first().length + 7) <= maxLength) {
+            while (inputArray.size != 0 && (bufferList[n].length + inputArray.first().length + 7) <= maxLength) {    //+7 запас для нумерования смс
                 bufferList.add(n, bufferList[n] + " " + inputArray.first())
                 inputArray.removeFirst()
             }
